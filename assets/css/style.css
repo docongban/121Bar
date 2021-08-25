@@ -1,5 +1,4 @@
 *{
-    box-sizing: inherit;/*kế thừa*/  
     margin:0;
     padding:0;
     --text-color:#837a58;
@@ -14,7 +13,11 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;/*cuộn mượt*/
 }
-
+.border-left-bottom {
+    border: 1px solid var(--text-color);
+    width:10px;
+    height:10px;
+}
 /* Header */
 .header{
     width: 100%;
@@ -55,8 +58,9 @@ html {
 /* Slider */
 .slider{
     margin-top: 75px;
-    padding-top: 50%;
+    padding-top: 60%;
     background: url('../img/slider.png') top center /cover no-repeat;
+    background-attachment:fixed;/*fix image while scroll*/
     position: relative;
 }
 .banner__img{
@@ -64,7 +68,7 @@ html {
     width:362px;
     height:440px;
     position: absolute;
-    top:50%;
+    top:48%;
     right: 50%;
     transform:translate(50%, -50%);
     color: var(--white-color);
@@ -145,7 +149,7 @@ html {
 .container__about{
     background-color:var(--background-color);
     position: relative;
-    height:507px;
+    height:665px;
 }
 .container__about-background{
     background: url('../img/background.png') ;
@@ -205,7 +209,7 @@ html {
 /* Container Decription */
 .container__decription{
     background-color:var(--background-color);
-    height:703px;
+    height:665px;
     position: relative;
 }
 .container__decription-background{
@@ -222,8 +226,8 @@ html {
 }
 .container__decription-all{
     position:absolute;
-    top:22%;
-    right:15%;
+    top: 22%;
+    left: calc(100% - 493px - 44px - 52px);
     width:425px;
 }
 .container__decription-all::before{
@@ -233,8 +237,8 @@ html {
     border-bottom: 1px solid var(--text-color);
     top:43%;
     left:-13%;
-    height:72%;
-    width:57%;
+    height:200px;
+    width: 242px;
 }
 .container__decription-all::after{
     content: "";
@@ -243,8 +247,8 @@ html {
     border-bottom: 1px solid var(--text-color);
     top:43%;
     left:-11%;
-    height:75%;
-    width:55%;
+    height:207px;
+    width: 234px;
 }
 .container__decription-header{
     color: var(--text-color);
@@ -272,4 +276,84 @@ html {
     font-weight:350;
     letter-spacing:0.1rem;
     padding-left: 1px;
+}
+
+/* Container Next Show */
+.container__next-show{
+    background-color:var(--background-color);
+    height:665px;
+    position: relative;
+}
+.container__next-show-background{
+    background: url('../img/background.png') ;
+    padding-top: 50%;
+}
+.container__next-show-all{
+    position:absolute;
+    top: 22%;
+    right:calc(450px + 44px + 154px + 40px);
+    width:425px;
+}
+.container__next-show-all::before{
+    content: "";
+    position:absolute;
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    top:43%;
+    left:-13%;
+    height:200px;
+    width: 242px;
+}
+.container__next-show-all::after{
+    content: "";
+    position:absolute;
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    top:43%;
+    left:-11%;
+    height:207px;
+    width: 234px;
+}
+.container__next-show-music{
+    color: var(--text-color);
+    display:block;   
+    font-size:1.5rem;
+    line-height:1.6rem;
+    font-weight:450;
+    letter-spacing:0.7rem;
+    padding-bottom: 18px;
+}
+.container__next-show-text{
+    color: var(--white-color);
+    display:block;
+    font-family: 'Nunito', sans-serif;
+    font-size:3rem;
+    line-height: 4rem;
+    letter-spacing:1rem;
+    font-weight:600;
+    padding-bottom: 11px;
+}
+.container__next-show-decrip{
+    color: var(--text-color);
+    font-size:1.5rem;
+    line-height:3rem;
+    font-weight:350;
+    letter-spacing:0.1rem;
+    padding-left: 1px;
+}
+.container__next-show-img{
+    position:absolute;
+    top:8%;
+    right:0;
+    height:435px;
+    width:493px;
+    object-fit:cover;
+    padding-right: 44px;
+}
+
+/* Container Image */
+.container__image{
+    background: url('../img/drink.png') top center /cover no-repeat;
+    padding-top: 50%;
+    background-attachment: fixed;
 }
