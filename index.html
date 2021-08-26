@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>121Bar</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -17,6 +16,7 @@
 </head>
 <body>
     <div class="app">
+        
         <!-- Begin Header -->
         <header class="header">
             <div class="grid min-wide">
@@ -35,7 +35,7 @@
                             <a href="" class="navbar__list-iteam-link">Live Shows</a>
                         </li>
                         <li class="navbar__list-iteam">
-                            <a href="" class="navbar__list-iteam-link">Contact</a>
+                            <a href="#contact" class="navbar__list-iteam-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,22 +63,32 @@
         </div>
         <!-- End Slider -->
 
+        <!-- Begin To home -->
+        <a href="#" class="to_home">
+            <i class="ti-angle-up"></i>
+        </a>
+        <!-- End To home -->
+
         <!-- Begin Container -->
         <div class="container">
             <!-- Begin About -->
             <div id="about" class="container__about">
                 <div class="container__about-background">
-                    <div class="grid min-wide">
-                        <div class="container__about-all">
-                            <div class="container__about-header">
-                                <span class="container__about-header-text">ABOUT</span>
-                                <span class="container__about-header-slogan-1">YOUR NEIGHBORHOOD</span>
-                                <span class="container__about-header-slogan-2">INSTITUTION</span>
-                                <span class="container__about-header-decrip">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</span>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-12">
+                                <div class="container__about-all">
+                                    <div class="container__about-header">
+                                        <h4 class="container__about-header-text">ABOUT</h4>
+                                        <h3 class="container__about-header-slogan-1">YOUR NEIGHBORHOOD</h3>
+                                        <h3 class="container__about-header-slogan-2">INSTITUTION</h3>
+                                        <p class="container__about-header-decrip">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                    </div>
+                                    <a href="#decription" class="container__about-down">
+                                        <i class="ti-arrow-down container__about-down-icon"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <a href="#decription" class="container__about-down">
-                                <i class="ti-arrow-down container__about-down-icon"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -88,12 +98,18 @@
             <!-- Begin Decription -->
             <div id="decription" class="container__decription">
                 <div class="container__decription-background">
-                    <img src="./assets/img/beer.png" alt="Beer" class="container__decription-img">
-                    <div class="grid min-wide">
-                        <div class="container__decription-all">
-                            <span class="container__decription-header">HAPPY HOUR</span>
-                            <span class="container__decription-sologan">CRAFT BEER TUESDAY</span>
-                            <p class="container__decription-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <div class="grid">
+                        <div class="row container__decription-row">
+                            <div class="col l-4">
+                                <img src="./assets/img/beer.png" alt="Beer" class="container__decription-img">
+                            </div>
+                            <div class="col l-6">
+                                <div class="container__decription-form">
+                                    <span class="container__decription-header">HAPPY HOUR</span>
+                                    <span class="container__decription-sologan">CRAFT BEER TUESDAY</span>
+                                    <p class="container__decription-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,14 +119,20 @@
             <!-- Begin Next Show -->
             <div class="container__next-show">
                 <div class="container__next-show-background">
-                    <div class="grid min-wide">
-                        <div class="container__next-show-all">
-                            <span class="container__next-show-music">MUSIC</span>
-                            <span class="container__next-show-text">NEXT SHOW: TYLER REECE</span>
-                            <p class="container__next-show-decrip">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <div class="grid">
+                        <div class="row container__next-show-row">
+                            <div class="col l-6">
+                                <div class="container__next-show-form">
+                                    <span class="container__next-show-music">MUSIC</span>
+                                    <span class="container__next-show-text">NEXT SHOW: TYLER REECE</span>
+                                    <p class="container__next-show-decrip">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                </div>
+                            </div>
+                            <div class="col l-4">
+                                <img src="./assets/img/singer.png" alt="Singer" class="container__next-show-img">
+                            </div>
                         </div>
                     </div>
-                    <img src="./assets/img/singer.png" alt="Singer" class="container__next-show-img">
                 </div>
             </div>
             <!-- End Next Show -->
@@ -119,13 +141,91 @@
             <div class="container__image"></div>
             <!-- End Image -->
 
+            <!-- Begin Contact -->
+            <div id="contact" class="container__contact">
+                <div class="container__contact-background">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-7 ">
+                                <div class="container__contact-form">
+                                    <h3 class="container__contact-header">CONTACT US</h3>
+                                    <p class="container__contact-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content.</p>
+                                    <a href="tel:0825210701" class="container__contact-phone">0825210701</a>
+                                    <a href="mailto:banto2172001@gmail.com" class="container__contact-mail">banto2172001@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="col l-5">
+                                <div class="container__contact-book">
+                                    <h3 class="container__contact-book-header">BOOK A TABLE</h3>
+                                    <input type="date" class="container__contact-book-date" required name="Date" id="Date">
+                                    <input type="time"  class="container__contact-book-time" required name="" id="time" value="00:00">
+                                    <select class="container__contact-book-number" name="" id="">
+                                        <option value="" disabled selected>Party size</option>
+                                        <option value="1">1 person</option>
+                                        <option value="2">2 people</option>
+                                        <option value="3">3 people</option>
+                                        <option value="4">4 people</option>
+                                        <option value="5">5 people</option>
+                                        <option value="6">6 people</option>
+                                    </select>
+                                    <input type="submit" class="container__contact-book-submit" required value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
             
+            <!-- Begin Map -->
+            <div class="container__map"></div>
+            <!-- End Map -->
         </div>
         <!-- End Container -->
 
         <!-- Begin Footer -->
         <footer class="footer">
-
+            <div class="footer-img">
+                <div class="grid min-wide">
+                    <div class="row">
+                        <div class="col l-6 footer-form">
+                            <div class="footer__contact">
+                                <h3 class="footer__contact-header">Join the Club & Get Updates on Special Events</h3>
+                                <h4 class="footer__contact-header-mail" >Enter Your Email</h4>
+                                <div class="grid">
+                                    <div class="row sm-gutter">
+                                        <div class="col l-8">
+                                            <input type="email" placeholder="Email" required name="" id="" class="footer__contact-email">
+                                        </div>
+                                        <div class="col l-4">
+                                            <input class="footer__contact-submit"  type="submit" value="Subscribe Now" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 footer-form">
+                            <div class="footer-form-social">
+                                <div class="footer__social">
+                                    <a href="" class="footer__social-link">
+                                        <i class="fab fa-facebook footer__social-icon"></i>
+                                    </a>
+                                    <a href="" class="footer__social-link">
+                                        <i class="fab fa-twitter footer__social-icon"></i>
+                                    </a>
+                                    <a href="" class="footer__social-link ">
+                                        <i class="fab fa-instagram footer__social-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="footer__copyright">
+                                    <p class="footer__copyright-date">© 2023 by 121 BAR.</p>
+                                    <p class="footer__copyright-text">Proudly created By BanDC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- End Footer -->
     </div>
