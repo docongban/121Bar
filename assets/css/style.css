@@ -6,6 +6,7 @@
     --header-color:#06101b;  
     --white-color: #ffff;
     --background-color:#06101b;
+    --menu-color:#aca076;
 }
 html {
     font-size: 62.5%;
@@ -14,7 +15,9 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;/*cuộn mượt*/
 }
-
+.mt-75{
+    margin-top:75px;
+}
 /* Header */
 .header{
     width: 100%;
@@ -26,7 +29,7 @@ html {
     left: 0;
     z-index: 1;
 }
-.to_home{
+.to_header{
     position: fixed;
     bottom: 50px;
     right: 45px;
@@ -39,7 +42,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
 }
 /* .navbar{
     
@@ -529,6 +531,7 @@ html {
 .footer-img{
     background: url('../img/background.png');
     height:100%;
+    padding-bottom: 30px;
 }
 /* .footer__contact{
 
@@ -621,3 +624,185 @@ html {
 /* .footer__copyright-text{
 
 } */
+
+
+/* Drinking Menu */
+.menu-color{
+    background-color:var(--background-color);
+    height:100%;
+    overflow: hidden;
+}
+.menu-background{
+    background: url('../img/background.png');
+    height:100%;
+}
+.menu__header{
+    text-align: center;
+    padding: 50px 0;
+}
+.menu__header-drinking{
+    color: var(--white-color);
+    font-family: 'Nunito', sans-serif;
+    font-size:3.2rem;
+    line-height: 4rem;
+    letter-spacing:1rem;
+    font-weight:600;
+    padding:5px 0;
+}
+.menu__header-text{
+    color: var(--text-color);
+    font-size:1.5rem;
+    line-height:3rem;
+    font-weight:350;
+    letter-spacing:0.1rem;
+    padding-bottom: 22px;
+}
+
+/* Drinking */
+.menu__drinking{
+    background-color:var(--background-color);
+    height:100%;
+    overflow: hidden;
+}
+.menu__drinking-img{
+    background: url('../img/background.png');
+    height:100%;
+}
+.menu__drinking-header{
+    color: var(--white-color);
+    font-family: 'Nunito', sans-serif;
+    font-size:3rem;
+    line-height: 4rem;
+    font-weight:600;
+    padding:5px 0;
+    text-align: center;
+    padding:55px 0 30px;
+    position: relative;
+}
+.menu__drinking-header::before{
+    content: "";
+    position:absolute;
+    border-bottom: 2px solid var(--white-color);
+    width: 100%;
+    left: 0;
+    top:112px;
+}
+.menu__drinking-header-text{
+    color: var(--menu-color);
+    font-size:1.5rem;
+    line-height:3rem;
+    font-weight:400;
+}
+.drinking__item{
+    padding-top: 40px;
+}
+.drinking__item-header{
+    font-size:1.5rem;
+    color:var(--white-color);
+    font-weight: 420;
+    padding-bottom: 20px;
+}
+.drinking__item-decrip{
+    color: var(--menu-color);
+    font-size:1.5rem;
+    line-height:2.7rem;
+    font-weight:400;
+}
+.drinking__item-price{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight:420;
+    line-height:1.8rem;
+    padding: 35px 0 80px;
+    position: relative;
+}
+.drinking__item-price::before{
+    content: "";
+    position: absolute;
+    border-bottom: 3px dashed var(--white-color);
+    width: 100%;
+    bottom:20px;
+}
+
+
+/* Live Shows */
+.live-color{
+    background-color:var(--background-color);
+    height:100%;
+    overflow: hidden;
+}
+.live-background{
+    background: url('../img/background.png');
+    height:100%;
+}
+.live__header{
+    color: var(--white-color);
+    font-family: 'Nunito', sans-serif;
+    font-size:3rem;
+    line-height: 4rem;
+    font-weight:600;
+    padding: 50px 0 20px;
+    text-align: center;
+    letter-spacing:1rem;
+}
+.live__show{
+    color:#ccc;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+.live__show::before{
+    content: "";
+    position:absolute;
+    border-bottom: 1px solid var(--white-color);
+    bottom: -50px;
+    width: 100%;
+}
+.live__show-perform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.live__show-date{
+    font-size: 3.1rem;
+    font-weight:350;
+    font-family: 'Nunito', sans-serif;
+    padding-right: 15px;
+}
+.live__show-time{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    font-size:1.1rem;
+}
+.live__show-week{
+    color: #cccccc8a;
+}
+/* .live__show-month{
+
+} */
+.live__show-dj{
+    font-size:1.5rem;
+    font-weight: 350;
+}
+.live__show-register{
+    display:block;
+    font-size:1.4rem;
+    background-color: #beac74;
+    color: #8c825c;
+    border: none;
+    font-weight: 350;
+    padding:12px 18px;
+}
+.live__show-register:hover{
+    background-color: #a29263;
+    color: #454538;
+    cursor: pointer;
+}
+.pd-t-100{
+    padding-top: 100px;
+}
+.pd-t-b-50{
+    padding: 50px 0;
+}
