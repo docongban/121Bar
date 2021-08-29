@@ -20,7 +20,7 @@
         <!-- Begin Header -->
         <header class="header">
             <div class="grid min-wide">
-                <nav class="navbar">
+                <nav class="navbar hide-on-mobile">
                     <ul class="navbar__list">
                         <li class="navbar__list-iteam">
                             <a href="index.html" class="navbar__list-iteam-link">Home</a>
@@ -30,6 +30,53 @@
                         </li>
                         <li class="navbar__list-iteam">
                             <a href="liveshows.html" class="navbar__list-iteam-link">Live Shows</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile -->
+                <label for="nav__mobile-input" class="mobile__navbar-btn hide-on-pc hide-on-table">
+                    <i class="ti-menu mobile__navbar-btn-icon"></i>
+                </label>
+
+                <input type="checkbox" name="" id="nav__mobile-input" class="nav__input hide-on-pc hide-on-table-mobile">
+                
+                <nav id="navbar-mobile" class="mobile__navbar hide-on-pc hide-on-tablet">
+                    <label for="nav__mobile-input" class="mobile__navbar-btn-close">
+                        <i class="ti-close mobile__navbar-btn-icon mobile__navbar-btn-icon-close"></i>
+                    </label>
+                    <ul class="mobile__navbar-list">
+                        <li class="mobile__navbar-item">
+                            <a href="index.html" class="mobile__navbar-item-link">Home</a>
+                        </li>
+                        <li class="mobile__navbar-item">
+                            <a href="index.html" class="mobile__navbar-item-link">About</a>
+                        </li>
+                        <li class="mobile__navbar-item">
+                            <a href="menu.html" class="mobile__navbar-item-link">Menu</a>
+                        </li>
+                        <li class="mobile__navbar-item">
+                            <a href="liveshows.html" class="mobile__navbar-item-link">Live Shows</a>
+                        </li>
+                        <li class="mobile__navbar-item">
+                            <a href="index.html" class="mobile__navbar-item-link">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile__navbar-icon">
+                        <li class="mobile__navbar-icon-item">
+                            <a href="https://www.facebook.com/docongban" target="_blank" class="mobile__navbar-item-link-icon">
+                                <i class="fab fa-facebook mobile__navbar-item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="mobile__navbar-icon-item">
+                            <a href="" class="mobile__navbar-item-link-icon">
+                                <i class="fab fa-twitter mobile__navbar-item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="mobile__navbar-icon-item">
+                            <a href="" class="mobile__navbar-item-link-icon">
+                                <i class="fab fa-instagram mobile__navbar-item-icon"></i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -50,13 +97,15 @@
                     <div class="grid liveshows-wide">
                         <h3 class="live__header">UPCOMING EVENTS</h3>
                         <div class="row pd-t-b-50">
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="live__show">
                                     <div class="live__show-perform">
-                                        <span class="live__show-date">12</span>
-                                        <div class="live__show-time">
-                                            <span class="live__show-week">Sun</span>
-                                            <span class="live__show-month">Feb</span>
+                                        <div class="live__show-time-perform">
+                                            <span class="live__show-date">12</span>
+                                            <div class="live__show-time">
+                                                <span class="live__show-week">Sun</span>
+                                                <span class="live__show-month">Feb</span>
+                                            </div>
                                         </div>
                                         <span class="live__show-dj">John Buckly</span>
                                     </div>
@@ -65,13 +114,32 @@
                             </div>
                         </div>
                         <div class="row pd-t-b-50">
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="live__show">
                                     <div class="live__show-perform">
-                                        <span class="live__show-date">20</span>
-                                        <div class="live__show-time">
-                                            <span class="live__show-week">Sat</span>
-                                            <span class="live__show-month">May</span>
+                                        <div class="live__show-time-perform">
+                                            <span class="live__show-date">19</span>
+                                            <div class="live__show-time">
+                                                <span class="live__show-week">Mon</span>
+                                                <span class="live__show-month">May</span>
+                                            </div>
+                                        </div>
+                                        <span class="live__show-dj">Alen Walker</span>
+                                    </div>
+                                    <input type="submit" class="live__show-register" value="Register Now">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pd-t-b-50">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="live__show">
+                                    <div class="live__show-perform">
+                                        <div class="live__show-time-perform">
+                                            <span class="live__show-date">20</span>
+                                            <div class="live__show-time">
+                                                <span class="live__show-week">Sat</span>
+                                                <span class="live__show-month">May</span>
+                                            </div>
                                         </div>
                                         <span class="live__show-dj">Alexa Hill</span>
                                     </div>
@@ -80,13 +148,15 @@
                             </div>
                         </div>
                         <div class="row pd-t-b-50">
-                            <div class="col l-12">
+                            <div class="col l-12 m-12 c-12">
                                 <div class="live__show">
                                     <div class="live__show-perform">
-                                        <span class="live__show-date">12</span>
-                                        <div class="live__show-time">
-                                            <span class="live__show-week">Sat</span>
-                                            <span class="live__show-month">Aug</span>
+                                        <div class="live__show-time-perform">
+                                            <span class="live__show-date">12</span>
+                                            <div class="live__show-time">
+                                                <span class="live__show-week">Sat</span>
+                                                <span class="live__show-month">Aug</span>
+                                            </div>
                                         </div>
                                         <span class="live__show-dj">Eddie Baker</span>
                                     </div>
@@ -101,30 +171,30 @@
         <!-- End Container -->
 
         <!-- Begin Footer -->
-        <footer class="footer pd-t-100">
+        <footer class="footer">
             <div class="footer-img">
                 <div class="grid min-wide">
                     <div class="row">
-                        <div class="col l-6 footer-form">
+                        <div class="col l-6 m-8 c-12 footer-form">
                             <div class="footer__contact">
                                 <h3 class="footer__contact-header">Join the Club & Get Updates on Special Events</h3>
                                 <h4 class="footer__contact-header-mail" >Enter Your Email</h4>
                                 <div class="grid">
                                     <div class="row sm-gutter">
-                                        <div class="col l-8">
+                                        <div class="col l-8 m-8 c-12">
                                             <input type="email" placeholder="Email" required name="" id="" class="footer__contact-email">
                                         </div>
-                                        <div class="col l-4">
+                                        <div class="col l-4 m-4 c-12">
                                             <input class="footer__contact-submit"  type="submit" value="Subscribe Now" >
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-6 footer-form">
+                        <div class="col l-6 m-4 c-12 footer-form">
                             <div class="footer-form-social">
                                 <div class="footer__social">
-                                    <a href="" class="footer__social-link">
+                                    <a href="https://www.facebook.com/docongban" target="_blank" class="footer__social-link">
                                         <i class="fab fa-facebook footer__social-icon"></i>
                                     </a>
                                     <a href="" class="footer__social-link">
